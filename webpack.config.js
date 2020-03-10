@@ -1,9 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	entry: {
-		app: ['./assets/index.js'],
+		app: ['./src/index.js'],
 	},
 	mode: 'development', // set to production for help when ready, Make Dynamic!!!
 	devtool: 'inline-source-map',
@@ -12,12 +13,26 @@ module.exports = {
 		path: path.join(__dirname, 'dist'),
 		publicPath: '/',
 	},
+	devServer: {
+		contentBase: path.join(__dirname, '/assets/'),
+		stats: { colors: true },
+		historyApiFallback: true,
+		hot: true,
+		compress: true,
+	},
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.jsx?$/,
 				exclude: /node_modules/,
-				use: [{ loader: 'babel-loader' }],
+				use: [
+					{
+						loader: 'babel-loader',
+						options: {
+							presets: ['@babel/env', '@babel/react'],
+						},
+					},
+				],
 			},
 			{
 				test: /\.css$/,
@@ -90,6 +105,13 @@ module.exports = {
 					},
 				],
 			},
+			{
+				test: /\.html$/i,
+				loader: 'html-loader',
+				options: {
+					collapseWhitespace: false,
+				},
+			},
 		],
 	},
 	stats: 'errors-only',
@@ -97,6 +119,11 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
-		new webpack.NoEmitOnErrorsPlugin(),
+		new HtmlWebpackPlugin({
+			title: 'ACL - Associated Clinical Labs',
+			template: './assets/index.html',
+			filename: './index.html',
+			inject: 'body',
+		}),
 	],
 };

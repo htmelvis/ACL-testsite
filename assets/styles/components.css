@@ -1,16 +1,63 @@
+body {
+	font-family: 'Montserrat';
+	background-color: #e2ece2;
+	@apply text-lg;
+}
 .container {
 	@apply mx-auto;
 }
+footer {
+	p {
+		@apply text-sm;
+	}
+}
+.bg-image {
+	width: 100%;
+}
 .footer-navigation {
-	width: 950px;
-	@apply mx-auto my-10;
+	@apply mx-auto my-1;
 	ul {
 		li {
 			@apply ml-6;
 			a {
-				@apply text-xs;
+				@apply text-base inline-block p-2;
+				&:hover {
+					@apply text-gray-300;
+				}
 			}
 		}
+	}
+}
+.navigation-bar {
+	@apply uppercase;
+	li {
+		@apply text-base;
+		a {
+			@apply px-2 inline-block;
+			&:hover {
+				@apply text-gray-300;
+			}
+		}
+	}
+}
+.main {
+	@apply pb-8 relative;
+	top: -50px;
+	h1 {
+		@apply font-bold text-2xl text-blue-900;
+	}
+	p {
+		@apply mb-4;
+		a {
+			@apply text-blue-700 font-bold;
+		}
+		.button {
+			@apply text-white my-4 inline-block;
+		}
+	}
+	.mapbox {
+		height: 460px;
+		margin-bottom: 2em;
 	}
 }
 /* Slider */
@@ -95,7 +142,7 @@
 	height: 100%;
 	z-index: 1;
 	left: 0;
-	top: 0;
+	bottom: 90px;
 	/* this padding is used to align the text */
 	padding-top: 100px;
 	/* Force Hardware Acceleration */
@@ -162,19 +209,12 @@
 .cd-hero__content h2,
 .cd-hero__content p {
 	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-	line-height: 1.2;
 	color: #ffffff;
 	width: 90%;
-	max-width: 400px;
+	max-width: 600px;
 }
-
-.cd-hero__content h2 {
-	font-size: 2.4rem;
-}
-
-.cd-hero__content p {
-	font-size: 1.4rem;
-	line-height: 1.4;
+.wave {
+	bottom: -2px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -220,16 +260,6 @@
 	.cd-hero__content.cd-hero__content--full-width,
 	.cd-hero__content.cd-hero__content--half-width {
 		padding-top: 220px;
-	}
-	.cd-hero__content h2,
-	.cd-hero__content p {
-		margin-bottom: 20px;
-	}
-	.cd-hero__content h2 {
-		font-size: 3.2em;
-	}
-	.cd-hero__content p {
-		font-size: 1.6rem;
 	}
 }
 
