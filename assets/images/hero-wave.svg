@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1440px" height="156px" viewBox="0 0 1440 156" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>Rectangle</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Homepage" transform="translate(0.000000, -681.000000)" fill="#E2ECE2">
-            <path d="M0,707 C144.382021,721.070376 249.076539,727.40371 314.083555,726 C905.712836,713.224829 1236.04557,681 1305.64335,681 C1386.71203,681 1431.49758,689.666667 1440,707 L1440,837 L0,837 L0,707 Z" id="Rectangle"></path>
+<svg width="1450px" height="158px" viewBox="0 0 1450 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-wave" fill="#E2ECE2" fill-rule="nonzero">
+            <path d="M0,26.1805556 C145.384674,40.3486425 250.806237,46.725958 316.264691,45.3125 C912.002508,32.4486125 1244.62922,0 1314.71032,0 C1396.34197,0 1441.43854,8.72685219 1450,26.1805556 L1450,157.083333 L0,157.083333 L0,26.1805556 Z" id="Rectangle"></path>
         </g>
     </g>
 </svg>

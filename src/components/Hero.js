@@ -19,7 +19,7 @@ const Hero = props => (
 				</div>
 			</li>
 		</ul>
-		<img src="/images/hero-wave.svg" className="wave w-full absolute" alt="ACL Hero Wave" />
+		<img src="/images/hero-wave.png" className="wave w-full absolute bottom-0" alt="ACL Hero Wave" />
 	</section>
 );
 
