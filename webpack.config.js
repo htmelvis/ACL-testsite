@@ -17,6 +17,7 @@ module.exports = {
 		contentBase: path.join(__dirname, '/assets/'),
 		stats: { colors: true },
 		historyApiFallback: true,
+		disableHostCheck: true,
 		// hot: true,
 		compress: true,
 	},
