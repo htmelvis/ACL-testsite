@@ -3,8 +3,8 @@ import Sidebar from '../components/partials/Sidebar';
 
 const Careers = props => (
 	<div className="main">
-		<div className="container mx-auto flex">
-			<div className="leader lg_w-2--3 sm_w-full">
+		<div className="container mx-auto md_flex">
+			<div className="leader md_w-2--3 w-full px-4 md_px-0">
 				<p>
 					ACL/CPI endeavors to make www.associatedclinicallabs.com accessible to any and all users. If you
 					would like to contact us regarding the accessibility of our website or need assistance completing
@@ -63,9 +63,8 @@ const Careers = props => (
 					forwarded to the appropriate party for a response.
 				</p>
 			</div>
-			<div className="lg_w-1--3 sm_w-full justify-center">
+			<br/>
 				<Sidebar />
-			</div>
 		</div>
 	</div>
 );

@@ -2,14 +2,14 @@ import React from 'react';
 
 const ContactUs = props => (
 	<div className="main">
-		<div className="container mx-auto flex">
-			<div className="leader lg_w-2--3 sm_w-full">
+		<div className="container mx-auto md_flex">
+			<div className="leader md_w-2--3 w-full px-4 md_px-0">
 				<p>
 					Send us a letter, an email, or call us. We like hearing from you so we've provided multiple
 					communication options whenever possible.
 				</p>
 
-				<h3 className="text-blue-900 mb-4 font-bold text-2xl my-6">Telephone Inquiries</h3>
+				<h3 className="text-center md_text-left text-blue-900 mb-4 font-bold text-2xl my-6">Telephone Inquiries</h3>
 				<table className="table-auto">
 					<thead>
 						<tr>

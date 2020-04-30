@@ -1,5 +1,5 @@
 body {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', sans-serif;
 	background-color: #e2ece2;
 	@apply text-lg;
 }
@@ -18,7 +18,6 @@ footer {
 	@apply mx-auto my-1;
 	ul {
 		li {
-			@apply ml-6;
 			a {
 				@apply text-base inline-block p-2;
 				&:hover {
@@ -30,6 +29,24 @@ footer {
 }
 .navigation-bar {
 	@apply uppercase;
+	a + .block {
+		margin-top: 10px;
+	}
+	a.is-active {
+		@apply text-blue-700;
+	}
+	ul {
+		transition: all 600ms ease;
+	}
+	ul.block {
+		li {
+			margin-left: -8px;
+			margin-bottom: 10px;
+			a {
+				@apply font-bold;
+			}
+		}
+	}
 	li {
 		@apply text-base;
 		a {
@@ -48,8 +65,13 @@ footer {
 	}
 	p {
 		@apply mb-4;
-		a {
-			@apply text-blue-500 font-bold;
+		line-height: 1.8em;
+
+a {
+			@apply text-blue-600 font-bold;
+			&:hover {
+				color: cornflowerblue;
+			 }
 		}
 		.button {
 			@apply text-white my-4 inline-block;
@@ -64,7 +86,7 @@ footer {
 	background-image: url('/images/short-colored-header.png');
 	background-repear: no-repeat;
 	background-size: cover;
-	min-height: 240px;
+	min-height: 265px;
 }
 /* Slider */
 .cd-hero {
@@ -169,7 +191,7 @@ footer {
 
 .cd-hero__content.cd-hero__content--img {
 	/* hide image on mobile device */
-	display: none;
+	/*display: none;*/
 }
 
 .cd-hero__content--img img {
@@ -185,7 +207,7 @@ footer {
 
 .cd-hero__content.cd-hero__content--bg-video {
 	/* hide video on mobile device */
-	display: none;
+	/*display: none;*/
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -570,4 +592,13 @@ footer {
 
 .no-js .cd-hero__nav {
 	display: none;
+}
+@media (max-width: 768px) {
+	.short-header-bg {
+		min-height: 205px;
+	}
+	.leader {
+		padding-top: 2em;
+	}
+
 }

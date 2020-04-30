@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Sidebar from '../components/partials/Sidebar';
 const Appointments = props => (
 	<div className="main">
-		<div className="container mx-auto flex">
-			<div className="leader lg_w-2--3 sm_w-full">
+		<div className="container mx-auto md_flex">
+			<div className="leader w-full px-4 md_px-0">
 				<h3 className="text-blue-900 mb-4 font-bold text-2xl">Schedule an Appointment</h3>
 
 				<p>
@@ -49,9 +49,8 @@ const Appointments = props => (
 					section for mailing address, phone numbers and inquiry details.
 				</p>
 			</div>
-			<div className="lg_w-1--3 sm_w-full justify-center">
+			<br/>
 				<Sidebar />
-			</div>
 		</div>
 	</div>
 );

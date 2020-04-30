@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Toolbar = () => (
 	<div className="top-toolbar bg-blue-900 w-full">
 		<div className="container">
-			<ul className="text-xs flex justify-end content-end text-white">
+			<ul className="text-xs hidden justify-end content-end text-white md_flex">
 				<li className="mr-4">
 					<NavLink to={'/locations'}>Find a location</NavLink>
 				</li>

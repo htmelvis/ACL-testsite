@@ -11,7 +11,7 @@ const Footer = props => (
 				style={{ maxWidth: '180px' }}
 			/>
 			<div className="footer-navigation text-white">
-				<ul className="flex items-center justify-center align-center uppercase">
+				<ul className="text-center md_flex items-center justify-center align-center uppercase">
 					<li>
 						<Link to="/">Home</Link>
 					</li>

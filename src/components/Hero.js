@@ -5,7 +5,7 @@ const Hero = props => (
 		<ul className="cd-hero__slider">
 			<li className="cd-hero__slide cd-hero__slide--video js-cd-slide cd-hero__slide--selected cd-hero__slide--from-right">
 				<div className="cd-hero__content cd-hero__content--full-width">
-					<div className="content-container p-6 pl-0 pb-0 container">
+					<div className="content-container p-6 md_p-6 md_pl-0 pb-6 md_pb-0 container">
 						<p className="text-white text-base uppercase leading-none mb-1">Welcome to</p>
 						<h2 className="text-white font-bold text-3xl leading-none mt-1">Associated Clinical Labs</h2>
 						<p className="text-white text-lg mt-4 leading-6">
@@ -14,8 +14,8 @@ const Hero = props => (
 					</div>
 				</div>
 
-				<div className="cd-hero__content cd-hero__content--bg-video js-cd-bg-video" data-video="assets/video">
-					<img src="/images/bg-colored.png" className="bg-image object-cover" />
+				<div className="cd-hero__content cd-hero__content--bg-video js-cd-bg-video object-cover md_object-fill" data-video="assets/video">
+					<img style={{minHeight: '240px'}} src="/images/bg-colored.png" className="bg-image object-cover" />
 				</div>
 			</li>
 		</ul>

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import Sidebar from '../components/partials/Sidebar';
 const About = () => (
 	<div className="main">
-		<div className="container mx-auto flex justify-center">
-			<div className="leader lg_w-2--3 sm_w-full">
+		<div className="container mx-auto md_flex justify-center">
+			<div className="leader md_w-2--3 w-full px-4 md_px-0">
 				<p>
 					<strong>Associated Clinical Laboratories</strong> <em>(ACL)</em> is a regional reference laboratory
 					serving Northwest Pennsylvania, Chautauqua County, New York and Ashtabula County, Ohio. Formed in
@@ -34,9 +34,8 @@ const About = () => (
 					section for mailing address, phone numbers and inquiry details.
 				</p>
 			</div>
-			<div className="lg_w-1--3 sm_w-full justify-center">
+			<br/>
 				<Sidebar />
-			</div>
 		</div>
 	</div>
 );
