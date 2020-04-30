@@ -17,7 +17,7 @@ module.exports = {
 		contentBase: path.join(__dirname, '/assets/'),
 		stats: { colors: true },
 		historyApiFallback: true,
-		hot: true,
+		// hot: true,
 		compress: true,
 	},
 	module: {
@@ -118,7 +118,7 @@ module.exports = {
 	plugins: [
 		new CleanWebpackPlugin(),
 		new webpack.optimize.OccurrenceOrderPlugin(),
-		new webpack.HotModuleReplacementPlugin(),
+		// new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'ACL - Associated Clinical Labs',
 			template: './assets/index.html',
