@@ -600,5 +600,8 @@ a {
 	.leader {
 		padding-top: 2em;
 	}
-
+	.content-container p {
+		margin-right: 0;
+		width: 100%;
+	}
 }
