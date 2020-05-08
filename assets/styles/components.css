@@ -3,6 +3,13 @@ body {
 	background-color: #e2ece2;
 	@apply text-lg;
 }
+.blue-bg {
+	background-color: #166086;
+}
+.green-bg {
+	background-color: #A3D9A5;
+}
+
 .container {
 	@apply mx-auto;
 }
@@ -68,7 +75,9 @@ footer {
 		line-height: 1.8em;
 
 a {
-			@apply text-blue-600 font-bold;
+	color: #3777d1;
+	text-decoration: underline;
+			@apply font-bold;
 			&:hover {
 				color: cornflowerblue;
 			 }

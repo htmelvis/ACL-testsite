@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = props => (
-	<footer className="bg-green-500 p-4">
+	<footer className="bg-green-500 p-4 border-t-2 border-blue-900">
 		<div className="container">
 			<img
 				className="block mx-auto shadow-lg rounded-lg bg-white p-2 mt-4 mb-6"
