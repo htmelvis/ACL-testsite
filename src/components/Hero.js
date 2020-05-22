@@ -14,9 +14,9 @@ const Hero = props =>  {
 					<div className="cd-hero__content cd-hero__content--full-width">
 						<div className="content-container p-6 md_p-6 md_pl-0 pb-6 md_pb-0 container">
 							<p className="text-white text-base uppercase leading-none mb-1">Welcome to</p>
-							<h2 className="text-white font-bold text-3xl leading-none mt-1">Associated Clinical Labs</h2>
+							<h2 className="text-white font-bold text-3xl leading-none mt-1">Associated<br/> Clinical<br/> Labs</h2>
 							<p className="text-white text-lg mt-4 leading-6">
-								Northwestern Pennsylvania’s leading provider of diagnostic testing, information and services
+								Northwestern Pennsylvania’s leading provider of diagnostic testing<span className="hidden lg_inline">, information and services</span>
 							</p>
 						</div>
 					</div>

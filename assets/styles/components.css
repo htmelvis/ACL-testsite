@@ -90,6 +90,9 @@ a {
 		height: 460px;
 		margin-bottom: 2em;
 	}
+	aside .text-xs {
+		margin-bottom: 0;
+	}
 }
 .short-header-bg {
 	background-image: url('/images/short-colored-header.png');
@@ -297,7 +300,7 @@ a {
 @media only screen and (min-width: 1170px) {
 	.cd-hero__content.cd-hero__content--full-width,
 	.cd-hero__content.cd-hero__content--half-width {
-		padding-top: 220px;
+		padding-top: 145px;
 	}
 }
 
@@ -612,5 +615,19 @@ a {
 	.content-container p {
 		margin-right: 0;
 		width: 100%;
+	}
+}
+.link-list {
+	li {
+		@apply text-center;
+	}
+	a {
+		@apply text-white font-bold;
+		&.active {
+			@apply text-green-200;
+			&:before {
+				content: '> '
+			 }
+		 }
 	}
 }

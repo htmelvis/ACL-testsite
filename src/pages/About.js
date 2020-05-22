@@ -35,7 +35,7 @@ const About = () => (
 				</p>
 			</div>
 			<br/>
-				<Sidebar />
+			<Sidebar />
 		</div>
 	</div>
 );
