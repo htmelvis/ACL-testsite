@@ -46,12 +46,12 @@ const LocationsTabs = () => {
 					</select>
 				</div>
 				<div className="hidden sm_block">
-					<div className="border-b border-gray-200">
+					<div className="border-b border-gray-600">
 						<nav className="-mb-px flex">
 							<a href="#"
 								 onClick={(e) => handleTabSelection(e, 0)}
 								 className={classNames({
-									 "w-1--4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5 text-gray-400 hover_text-gray-700 hover_border-gray-300 focus_outline-none focus_text-gray-700 focus_border-gray-300": true,
+									 "w-1--4 py-4 px-1 text-center border-b-2 font-medium text-sm leading-5 text-gray-600 hover_text-gray-700 hover_border-gray-300 focus_outline-none focus_text-gray-700 focus_border-gray-300": true,
 									 "border-indigo-500": activeTab === 0,
 									 "text-indigo-500": activeTab === 0,
 									 "font-bold": activeTab === 0
@@ -61,7 +61,7 @@ const LocationsTabs = () => {
 							<a href="#"
 								 onClick={(e) => handleTabSelection(e, 1)}
 								 className={classNames({
-									 "w-1--4 py-4 px-1 text-center border-b-2 border-transparent font-medium text-sm leading-5 text-gray-400 hover_text-gray-700 hover_border-gray-300 focus_outline-none focus_text-gray-700 focus_border-gray-300": true,
+									 "w-1--4 py-4 px-1 text-center border-b-2 border-transparent font-medium text-sm leading-5 text-gray-600 hover_text-gray-700 hover_border-gray-300 focus_outline-none focus_text-gray-700 focus_border-gray-300": true,
 									 "border-indigo-500": activeTab === 1,
 									 "text-indigo-500": activeTab === 1,
 									 "font-bold": activeTab === 1
@@ -71,7 +71,7 @@ const LocationsTabs = () => {
 							<a href="#"
 								 onClick={(e) => handleTabSelection(e, 2)}
 								 className={classNames({
-									 "w-1--4 py-4 px-1 text-center border-b-2 border-transparent font-medium text-sm leading-5 text-gray-400 focus_outline-none focus_text-indigo-800 focus_border-indigo-700": true,
+									 "w-1--4 py-4 px-1 text-center border-b-2 border-transparent font-medium text-sm leading-5 text-gray-600 focus_outline-none focus_text-indigo-800 focus_border-indigo-700": true,
 									 "border-indigo-500": activeTab === 2,
 									 "text-indigo-500": activeTab === 2,
 									 "font-bold": activeTab === 2
