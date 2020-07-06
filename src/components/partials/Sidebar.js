@@ -3,6 +3,7 @@ import { Link, NavLink, useRouteMatch } from 'react-router-dom';
 
 const Sidebar = () => {
 	const match = useRouteMatch('/about');
+	const locationsMatch = useRouteMatch('/locations');
 	const home = useRouteMatch('/');
 	return (
 	<aside className="self-start shadow-md blue-bg pb-8 md_ml-8 rounded-lg p-4 w-full md_w-1--3">
@@ -50,9 +51,16 @@ const Sidebar = () => {
 		</p>
 		<h4 className="text-center uppercase text-blue-300 text-xl font-bold my-4">Toll Free Telephone</h4>
 		<h3 className="text-center font-bold text-blue-100 text-2xl my-4 mb-8">1-800-937-8028</h3>
+		{!locationsMatch &&
 		<Link to="/locations">
 			<img src="images/Location.png" alt="Find ACL Location" className="mx-auto" />
 		</Link>
+		}
+		{ locationsMatch && locationsMatch.isExact &&
+		<a href="https://secure.questdiagnostics.com/hcp/psc/jsp/SearchLocation.do" target={"_blank"}>
+			<img src="images/scheduleanapptbutton.png" alt="Schedule an Appointment" className="mx-auto" />
+		</a>
+		}
 	</aside>
 )};
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import Sidebar from '../components/partials/Sidebar';
+import {list} from "postcss";
 
 const Locations = props => (
 	<div className="main">
@@ -19,6 +20,7 @@ const Locations = props => (
 					to find an ACL Patient Service Center and schedule an appointment.
 				</p>
 				<LocationsTabs />
+				<LocationAccordions />
 			</div>
 			<br/>
 			<Sidebar />
@@ -164,5 +166,31 @@ const ErieLocation = props => (
 const locationTabs = [<ErieLocation />,
 	<NewYorkLocation />,
 	<OtherLocations/>];
+
+const LocationAccordions = props => {
+	const count = [1,2,3,4,5];
+	return (
+		<div className="mt-8 location-list">
+			<div className="mt-2 mb-2 location-accordion">
+				<div className="location-title mb-2">
+					<h1 className="uppercase">Erie Country ACL PSC Location Addresses &amp; Hours <strong>+</strong></h1>
+				</div>
+				<div className="location-content">
+					<div className="flex justify-between items-center">
+						{count.map((location, i) => (
+							<div key={i} className="address text-center">
+								<h3 className="font-bold text-blue-600"><a href="#">Location Name</a></h3>
+								<p className="leading-none mt-0 mb-0">Address Line 1 <br />
+									Address Line 2 <br />
+									Address Line 3</p>
+								<p className="leading-none mt-2 mb-0"><a href="tel:">814-555-5555</a></p>
+							</div>
+						))}
+					</div>
+				</div>
+			</div>
+		</div>
+	)
+}
 
 export default Locations;

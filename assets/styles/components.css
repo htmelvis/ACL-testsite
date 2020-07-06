@@ -631,3 +631,9 @@ a {
 		 }
 	}
 }
+.location-list {
+	p {
+		margin-bottom: 0;
+		line-height: 1.15;
+	}
+}
