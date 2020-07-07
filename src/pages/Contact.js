@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+import Sidebar from '../components/partials/Sidebar';
 
 const ContactUs = props => (
 	<div className="main">
@@ -56,13 +58,7 @@ const ContactUs = props => (
 						</tr>
 					</tbody>
 				</table>
-				<h3 className="text-blue-900 mb-4 font-bold text-2xl my-6">Mailing Address</h3>
-				<p className="text-left">
-					Associated Clinical Laboratories <br />
-					1526 Peach Street
-					<br />
-					Erie, PA 16501
-				</p>
+
 				<h3 className="text-blue-900 mb-4 font-bold text-2xl my-6">Questions, & Feedback</h3>
 
 				<p>
@@ -74,13 +70,7 @@ const ContactUs = props => (
 					forwarded to the appropriate party for a response.
 				</p>
 			</div>
-			<div className="lg_w-1--3 sm_w-full justify-center">
-				<img
-					src="images/quest.gif"
-					alt="Quest Diagnostics ACL Partner"
-					className="p-2 inline-block bg-white rounded-lg shadow-md mx-auto ml-6"
-				/>
-			</div>
+			<Sidebar />
 		</div>
 	</div>
 );
