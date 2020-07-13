@@ -651,3 +651,12 @@ a {
 	cursor: pointer;
 	 }
 }
+.link-box {
+	.nav-block {
+		@apply border-2 border-blue-800 shadow-xl;
+	}
+}
+.main .link-box p {
+	line-height: 1em;
+	@apply font-bold;
+}
