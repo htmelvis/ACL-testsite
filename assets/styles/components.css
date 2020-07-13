@@ -631,3 +631,23 @@ a {
 		 }
 	}
 }
+.location-list {
+	p {
+		margin-bottom: 0;
+		line-height: 1.15;
+	}
+}
+.location-title {
+	&:hover {
+	cursor: pointer;
+	 }
+}
+.location-content {
+	@apply p-4 border-2 border-blue-200 rounded-lg bg-gray-100;
+}
+.hours-title {
+@apply text-blue-500;
+	&:hover {
+	cursor: pointer;
+	 }
+}
