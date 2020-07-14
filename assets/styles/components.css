@@ -620,16 +620,27 @@ a {
 .link-list {
 	li {
 		@apply text-center;
+		line-height: 2em;
+		margin-bottom: .25em;
 	}
 	a {
 		@apply text-white font-bold;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
 		&.active {
-			@apply text-green-200;
+			@apply text-green-200 bg-green-500;
 			&:before {
 				content: '> '
 			 }
 		 }
 	}
+}
+.bg-blue-green-gradient {
+	/*background: rgb(35,56,118);*/
+	/*background: linear-gradient(90deg, rgba(35,56,118,1) 0%, rgba(14,159,110,1) 100%);*/
+	background: rgb(26,50,120);
+	background: linear-gradient(90deg, rgba(26,50,120,0.29175420168067223) 0%, rgba(14,159,110,0.4206057422969187) 100%);
 }
 .location-list {
 	p {
