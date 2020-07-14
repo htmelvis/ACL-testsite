@@ -17,12 +17,12 @@ const Home = props => {
 									<p>Locations</p>
 								</div>
 							</a>
-							<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/schedule-appointment">
+							<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/appointments">
 								<div className="w-full nav-block blue-bg hover_bg-green-500 flex items-center justify-center px-3 pt-3 mr-2 text-blue-100 rounded-lg">
 									<p className="text-sm leading-none">Schedule Appointment</p>
 								</div>
 							</a>
-							<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/make-payment">
+							<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/payments">
 								<div className="w-full nav-block blue-bg hover_bg-green-500 flex items-center justify-center px-4 pt-3 mr-2 text-blue-100 rounded-lg">
 									<p className="leading-none">Make Payment</p>
 								</div>
@@ -32,7 +32,7 @@ const Home = props => {
 									<p>Careers</p>
 								</div>
 							</a>
-						<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/about-us">
+						<a className="mb-2 w-1--3 md_w-1--3 lg_w-1--6 sm_w-1--3 link-box flex items-stretch text-center leading-none" href="/about">
 							<div className="w-full nav-block blue-bg hover_bg-green-500 flex items-center justify-center px-4 pt-3 mr-2 text-blue-100 rounded-lg">
 								<p>About Us</p>
 							</div>
