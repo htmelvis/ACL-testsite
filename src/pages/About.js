@@ -40,10 +40,6 @@ const About = () => {
 					<div onClick={() => setExpanded(!isExpanded)} className="lg_hidden">
 						<a href="#" className="font-bold text-blue-800">View More {!isExpanded ? '+' : '-'}</a>
 					</div>
-					<p>
-						Through our affiliation with Quest Diagnostics Incorporated we are pleased to offer our patients
-						access to the following services:
-					</p>
 					<h3 className="text-blue-900 mb-4 font-bold text-2xl">Questions, & Feedback</h3>
 					<p>
 						Please email the{' '}

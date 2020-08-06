@@ -24,19 +24,19 @@ const Sidebar = () => {
 				<h4 className="mt-8 text-center uppercase text-blue-300 text-xl font-bold my-4">Site Navigation</h4>
 
 				<ul>
-					<li><NavLink to="/locations">
+					<li><NavLink className="bg-blue-green-gradient border-2 border-blue-900 shadow-lg hover_bg-green-500 pt-2 pb-2 px-3 rounded-lg" to="/locations">
 						Find A Location
 					</NavLink></li>
-					<li><NavLink to="/appointments">
+					<li><NavLink className="bg-blue-green-gradient border-2 border-blue-900 shadow-lg hover_bg-green-500 pt-2 pb-2 px-3 rounded-lg" to="/appointments">
 						Schedule An Appointment
 					</NavLink></li>
-					<li><NavLink to="/payments">
+					<li><NavLink className="bg-blue-green-gradient border-2 border-blue-900 shadow-lg hover_bg-green-500 pt-2 pb-2 px-3 rounded-lg" to="/payments">
 						Make Payment
 					</NavLink></li>
-					<li><NavLink to="/careers">
+					<li><NavLink className="bg-blue-green-gradient border-2 border-blue-900 shadow-lg hover_bg-green-500 pt-2 pb-2 px-3 rounded-lg" to="/careers">
 						Careers
 					</NavLink></li>
-					<li><NavLink to="/about">
+					<li><NavLink className="bg-blue-green-gradient border-2 border-blue-900 shadow-lg hover_bg-green-500 pt-2 pb-2 px-3 rounded-lg" to="/about">
 						About ACL
 					</NavLink></li>
 				</ul>
@@ -51,7 +51,7 @@ const Sidebar = () => {
 		</p>
 		<h4 className="text-center uppercase text-blue-300 text-xl font-bold my-4">Toll Free Telephone</h4>
 		<h3 className="text-center font-bold text-blue-100 text-2xl my-4 mb-8">1-800-937-8028</h3>
-		{!locationsMatch && !home && !home.isExact &&
+		{!locationsMatch && !home &&
 		<Link to="/locations">
 			<img src="images/Location.png" alt="Find ACL Location" className="mx-auto" />
 		</Link>
