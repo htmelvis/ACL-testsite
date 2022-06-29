@@ -14,7 +14,6 @@ import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import DefaultTemplate from '../components/templates/Default';
 import SecondaryLayout from '../components/templates/SecondaryLayout';
-import { useLocation } from 'react-router-dom';
 const AppContainer = props => {
 	return (
 		<Router>
